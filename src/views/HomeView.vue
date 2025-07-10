@@ -1,9 +1,8 @@
 <template>
   <section class="home-section">
-    <h1 class="main-title">Welcome to My Gameplay Developer Portfolio</h1>
-    <h2 class="subtitle">Gameplay Developer</h2>
+    <h1 class="main-title">Welcome!</h1>
     <p class="intro">
-      This is the professional portfolio of <span class="highlight">[Your Name]</span>, a passionate gameplay developer specializing in interactive experiences, game mechanics, and immersive storytelling. Explore my projects, career highlights, and learn more about my journey in the game development industry.
+      Welcome to my portfolio. Here you will find everything I have done so far and some more.
     </p>
     <div class="video-card">
       <iframe 
@@ -14,6 +13,7 @@
         allowfullscreen>
       </iframe>
     </div>
+    <a href="/cv.pdf" download class="download-cv-btn">Download CV</a>
   </section>
 </template>
 
@@ -27,34 +27,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
-  max-width: 900px;
+  width: 90vw;
+  max-width: 60rem;
+  min-width: 0;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 0 1.5rem;
+  padding: 1vw 2vw;
   background: rgba(30, 32, 36, 0.95);
-  border-radius: 18px;
-  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18);
+  border-radius: 2vw;
+  box-shadow: 0 0.5vw 2vw 0 rgba(0,0,0,0.18);
 }
 .main-title {
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   color: #e0e6ed;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.5vw;
   text-align: center;
   letter-spacing: 0.01em;
 }
 .subtitle {
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 2.5vw, 2rem);
   font-weight: 600;
-  color: rgba(255, 140, 0, 0.9); /* 10% orange, 90% opacity */
-  margin-bottom: 1.2rem;
+  color: rgba(255, 140, 0, 0.9);
+  margin-bottom: 2vw;
   text-align: center;
 }
 .intro {
-  font-size: 1.15rem;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
   color: #b0b8c1;
   text-align: center;
-  margin-bottom: 2.2rem;
+  margin-bottom: 3vw;
   line-height: 1.7;
 }
 .highlight {
@@ -63,28 +64,54 @@
 }
 .video-card {
   width: 100%;
-  max-width: 700px;
-  /* Remove background and box-shadow for seamless look */
-  border-radius: 14px;
+  max-width: 48rem;
+  border-radius: 1.2vw;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5vw;
 }
 .portfolio-video {
   width: 100%;
   aspect-ratio: 16/9;
   border: none;
-  border-radius: 10px;
+  border-radius: 1vw;
   background: transparent;
   box-shadow: none;
 }
+.download-cv-btn {
+  display: inline-block;
+  margin: 2vw auto 2vw auto;
+  padding: 0.8em 2.5em;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 140, 0, 0.9);
+  border: none;
+  border-radius: 2em;
+  text-decoration: none;
+  box-shadow: 0 0.2vw 0.8vw rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+.download-cv-btn:hover {
+  background: #fff;
+  color: rgba(255, 140, 0, 0.95);
+  box-shadow: 0 0.4vw 1.6vw rgba(255,140,0,0.15);
+}
 @media (max-width: 700px) {
+  .home-section {
+    width: 98vw;
+    max-width: 100vw;
+    padding: 4vw 2vw 2vw 2vw;
+    border-radius: 4vw;
+  }
   .main-title {
-    font-size: 2rem;
+    font-size: clamp(1.3rem, 7vw, 2.2rem);
   }
   .video-card {
+    max-width: 100vw;
     padding: 0.5rem;
   }
 }

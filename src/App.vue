@@ -48,7 +48,7 @@ header {
 #app {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: var(--color-background);
-  min-height: 100vh;
+  
 }
 .nav-panel {
   position: fixed;
@@ -80,11 +80,9 @@ header {
   border-bottom: 2px solid rgba(255, 140, 0, 0.9);
   background: rgba(255, 140, 0, 0.12); /* subtle orange background on hover */
 }
+
 main {
-  padding: 4.5rem 2rem 2rem 2rem;
   max-width: 900px;
   margin: 0 auto;
 }
 </style>
-
-
