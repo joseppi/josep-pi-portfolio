@@ -1,18 +1,18 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-
-    <div class="wrapper"> </div>
-  </header>
-
-  <main>
-    
-  </main>
+  <div id="app">
+    <nav class="nav-panel">
+      <router-link to="/" exact>Home</router-link>
+      <router-link to="/projects">Projects</router-link>
+      <router-link to="/career">Career</router-link>
+      <router-link to="/about">About</router-link>
+    </nav>
+    <main>
+      <router-view />
+    </main>
+  </div>
 </template>
 
 <style scoped>
@@ -43,3 +43,48 @@ header {
   }
 }
 </style>
+
+<style>
+#app {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--color-background);
+  min-height: 100vh;
+}
+.nav-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  gap: 2rem;
+  background: #222;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.nav-panel a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.2rem;
+}
+.nav-panel a.router-link-exact-active {
+  color: rgba(255, 140, 0, 0.9);
+  border-bottom: 2px solid rgba(255, 140, 0, 0.9);
+}
+.nav-panel a:hover {
+  color: rgba(255, 140, 0, 0.9);
+  border-bottom: 2px solid rgba(255, 140, 0, 0.9);
+  background: rgba(255, 140, 0, 0.12); /* subtle orange background on hover */
+}
+main {
+  padding: 4.5rem 2rem 2rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+</style>
+
+
