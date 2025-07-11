@@ -1,8 +1,8 @@
 <template>
   <section class="home-section">
-    <h1 class="main-title">Welcome!</h1>
+    <h1 class="main-title">Hi, I'm Josep Pi</h1>
     <p class="intro">
-      Welcome to my portfolio. Here you will find everything I have done so far and some more.
+      Programmer by day, musician by night! 
     </p>
     <div class="video-card">
       <iframe 
@@ -13,7 +13,9 @@
         allowfullscreen>
       </iframe>
     </div>
-    <a href="/cv.pdf" download class="download-cv-btn">Download CV</a>
+    <a href="/josep-pi-portfolio/CV_Josep_Pi.pdf" target="_blank" rel="noopener" class="download-cv-btn">
+      View CV
+    </a>
   </section>
 </template>
 
