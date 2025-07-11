@@ -57,32 +57,38 @@ header {
   width: 100vw;
   z-index: 1000;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   background: #222;
-  padding: 1rem 2rem;
+  height: var(--nav-height);
+  min-height: var(--nav-height);
+  padding: 0 3rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  align-items: flex-end;
 }
+
 .nav-panel a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.65rem;
   transition: color 0.2s, border-bottom 0.2s;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 0.2rem;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 0.3rem;
+  
 }
 .nav-panel a.router-link-exact-active {
   color: rgba(255, 140, 0, 0.9);
-  border-bottom: 2px solid rgba(255, 140, 0, 0.9);
+  border-bottom: 3px solid rgba(255, 140, 0, 0.9);
 }
 .nav-panel a:hover {
   color: rgba(255, 140, 0, 0.9);
-  border-bottom: 2px solid rgba(255, 140, 0, 0.9);
+  border-bottom: 3px solid rgba(255, 140, 0, 0.9);
   background: rgba(255, 140, 0, 0.12); /* subtle orange background on hover */
 }
 
 main {
   max-width: 900px;
   margin: 0 auto;
+  padding-top: var(--nav-height);
 }
 </style>

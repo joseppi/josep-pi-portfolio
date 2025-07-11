@@ -1,5 +1,5 @@
 <template>
-  <section class="home-section">
+  <section class="view-section">
     <h1 class="main-title">Hi, I'm Josep Pi</h1>
     <p class="intro">
       Programmer by day, musician by night! 
@@ -24,7 +24,7 @@
 </script>
 
 <style scoped>
-.home-section {
+.view-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +103,7 @@
   box-shadow: 0 0.4vw 1.6vw rgba(255,140,0,0.15);
 }
 @media (max-width: 700px) {
-  .home-section {
+  .view-section {
     width: 98vw;
     max-width: 100vw;
     padding: 4vw 2vw 2vw 2vw;
