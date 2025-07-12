@@ -48,7 +48,7 @@ header {
 #app {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: var(--color-background);
-  
+  margin: 0;
 }
 .nav-panel {
   position: fixed;
@@ -89,6 +89,6 @@ header {
 main {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: var(--nav-height);
+  padding-top: 0;
 }
 </style>
