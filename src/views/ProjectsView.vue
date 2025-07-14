@@ -4,14 +4,12 @@
     <ul class="project-list">
       <!-- Trust No God Project Item -->
       <li class="project-item" @click="goToTrustNoGod" tabindex="0">
-        <div class="project-bg trustnogod-gif-bg">
-          <span class="project-title">Trust No God</span>
+        <div class="project-bg trustnogod-img-bg">
         </div>
       </li>
-      <!-- Wired Pirates Project Item -->
-      <li class="project-item" @click="goToWiredPirates" tabindex="0">
-        <div class="project-bg placeholder1-bg">
-          <span class="project-title">Wired Pirates</span>
+      <!-- OmNom Pirates Project Item -->
+      <li class="project-item" @click="goToOmNomPirates" tabindex="0">
+        <div class="project-bg omnompirates-img-bg">
         </div>
       </li>
     </ul>
@@ -24,8 +22,8 @@ const router = useRouter()
 function goToTrustNoGod() {
   router.push('/trustnogod')
 }
-function goToWiredPirates() {
-  router.push('/wiredpirates')
+function goToOmNomPirates() {
+  router.push('/omnompirates')
 }
 </script>
 
@@ -33,7 +31,6 @@ function goToWiredPirates() {
 .project-list {
   list-style: none;
   padding: 0;
-  background: rgba(30, 32, 36, 0.95);
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -115,9 +112,9 @@ function goToWiredPirates() {
   min-width: 0;
   margin: 0 auto;
   padding: 1vw 2vw;
-  background: rgba(30, 32, 36, 0.95);
+  background: var(--color-background);
   border-radius: 2vw;
-  box-shadow: 0 0.5vw 2vw 0 rgba(0,0,0,0.18);
+  box-shadow: var(--section-box-shadow);
 }
 @media (max-width: 700px) {
   .view-section {
@@ -127,14 +124,15 @@ function goToWiredPirates() {
     border-radius: 4vw;
   }
 }
-.trustnogod-gif-bg {
-  background-image: url('https://gyazo.com/9fe17e560d69a30df4e69c28908be565/raw');
+/* Remove .trustnogod-gif-bg and add .trustnogod-img-bg with new image */
+.trustnogod-img-bg {
+  background-image: url('https://gyazo.com/13b9eeb9b4de69216fdcf62f0e9840a2/raw');
   background-size: cover;
   background-position: center;
 }
-/* Add new backgrounds for placeholders */
-.placeholder1-bg {
-  background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80');
+/* Rename .placeholder1-bg to .omnompirates-img-bg and update image */
+.omnompirates-img-bg {
+  background-image: url('https://gyazo.com/1c94b7d1be6bc16ce3cd23acd63b0d9a/raw');
   background-size: cover;
   background-position: center;
 }

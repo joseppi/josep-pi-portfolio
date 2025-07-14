@@ -8,7 +8,7 @@ import ProjectsView from './views/ProjectsView.vue'
 import CareerView from './views/CareerView.vue'
 import AboutView from './views/AboutView.vue'
 import TrustNoGodProjectsView from './views/TrustNoGodProjectsView.vue'
-import WiredPiratesProjectView from './views/WiredPiratesProjectView.vue'
+import OmNomPiratesProjectView from './views/OmNomPiratesProjectView.vue'
 
 const routes = [
   { path: '/', component: HomeView },
@@ -16,7 +16,7 @@ const routes = [
   { path: '/career', component: CareerView },
   { path: '/about', component: AboutView },
   { path: '/trustnogod', component: TrustNoGodProjectsView },
-  { path: '/wiredpirates', component: WiredPiratesProjectView },
+  { path: '/omnompirates', component: OmNomPiratesProjectView },
 ]
 
 const router = createRouter({

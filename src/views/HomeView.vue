@@ -34,9 +34,9 @@
   min-width: 0;
   margin: 0 auto;
   padding: 1vw 2vw;
-  background: rgba(30, 32, 36, 0.95);
+  background: var(--color-background);
   border-radius: 2vw;
-  box-shadow: 0 0.5vw 2vw 0 rgba(0,0,0,0.18);
+  box-shadow: var(--section-box-shadow);
 }
 .main-title {
   font-size: clamp(2rem, 5vw, 3.5rem);

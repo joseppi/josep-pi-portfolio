@@ -36,9 +36,9 @@ li {
   min-width: 0;
   margin: 0 auto;
   padding: 1vw 2vw;
-  background: rgba(30, 32, 36, 0.95);
+  background: var(--color-background);
   border-radius: 2vw;
-  box-shadow: 0 0.5vw 2vw 0 rgba(0,0,0,0.18);
+  box-shadow: var(--section-box-shadow);
 }
 @media (max-width: 700px) {
   .view-section {

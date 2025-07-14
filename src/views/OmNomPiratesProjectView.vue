@@ -1,56 +1,49 @@
 <template>
-  <section class="view-section trustnogod-section">
-    <div class="trustnogod-header">
+  <section class="view-section omnompirates-section">
+    <div class="omnompirates-header">
       <div class="back-arrow" @click="goBack">
         <svg class="svg-arrow" width="3rem" height="3rem" viewBox="0 0 48 48" fill="none">
           <path d="M30 36L18 24L30 12" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
     </div>
-    <div class="trustnogod-header-content">
-      <h1 class="trustnogod-title">Trust no God</h1>
-      <h2 class="trustnogod-subtitle center">RTS + Roguelike + Tower Defense</h2>
+    <div class="omnompirates-header-content">
+      <h1 class="omnompirates-title">OmNom Pirates</h1>
+      <h2 class="omnompirates-subtitle center">Auto-Battler</h2>
     </div>
     <div class="trailer-container">
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/-bZDdM874LM"
+        src="https://www.youtube.com/embed/DX_WiFLyFMI?autoplay=1&mute=1"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
     </div>
-    <h2 class="trustnogod-subtitle">What did I do?</h2>
-    <div class="trustnogod-grid">
-      <div class="trustnogod-row">
-        <div class="trustnogod-image enemy-generation-image"></div>
-        <div class="trustnogod-task">
-          <h3>Enemy Generation</h3>
-          <p>Created an enemy generator that adapts to the players power and skill making the game extremely replayable in the process.</p>
+    <h2 class="omnompirates-subtitle">What did I do?</h2>
+    <div class="omnompirates-grid">
+      <div class="omnompirates-row">
+        <div class="omnompirates-image tutorial-system-image"></div>
+        <div class="omnompirates-task">
+          <h3>Tutorial System</h3>
+          <p>Created, refactored and maintained the tutorial system for the game. I also created the tutorial with the help of the game designer.</p>
         </div>
       </div>
-      <div class="trustnogod-row">
-        <div class="trustnogod-task left">
-          <h3>A Star</h3>
-          <p>Created an A* pathfinding system so we can create the path the troops have to follow before attacking the enemy.</p>
+      <div class="omnompirates-row">
+        <div class="omnompirates-task left">
+          <h3>UI Implementation</h3>
+          <p>I worked with a designer to implement some of the game's UI and its animations.</p>
         </div>
-        <div class="trustnogod-image astar-image"></div>
+        <div class="omnompirates-image uianimations-image"></div>
       </div>
-      <div class="trustnogod-row">
-        <div class="trustnogod-image ui-animation-image"></div>
-        <div class="trustnogod-task">
-          <h3>UI Animation system.</h3>
-          <p>Added animations to most UI to make every single action feel better while also trying to improve the user exeperience in the process.</p>
+      <div class="omnompirates-row">
+        <div class="omnompirates-image unit-visualizer-image"></div>
+        <div class="omnompirates-task">
+          <h3>Unit Visualizer</h3>
+          <p>I implemented the unit visualizer for the game.</p>
         </div>
-      </div>
-      <div class="trustnogod-row">
-        <div class="trustnogod-task left">
-          <h3>SOLID Principles</h3>
-          <p>By following the SOLID principles, I was able to implement global stat modifiers with ease.</p>
-        </div>
-        <div class="trustnogod-image solid-image"></div>
       </div>
     </div>
   </section>
@@ -67,7 +60,7 @@ function goBack() {
 </script>
 
 <style scoped>
-.trustnogod-section {
+.omnompirates-section {
   width: 100%;
   max-width: 3000px;
   margin: 0 auto;
@@ -81,7 +74,7 @@ function goBack() {
   position: relative;
 }
 
-.trustnogod-header {
+.omnompirates-header {
   position: absolute;
   top: 0;
   left: 0;
@@ -92,18 +85,18 @@ function goBack() {
   z-index: 2;
   pointer-events: none;
 }
-.trustnogod-header-content, .back-arrow {
+.omnompirates-header-content, .back-arrow {
   pointer-events: auto;
 }
 
-.trustnogod-header-content {
+.omnompirates-header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;  
 }
 
-.trustnogod-title {
+.omnompirates-title {
   text-align: center;
   margin: 0;
   font-size: 2.5rem;
@@ -141,18 +134,18 @@ function goBack() {
 .back-arrow:hover .svg-arrow path {
   stroke: #ff9800;
 }
-.trustnogod-subtitle {
+.omnompirates-subtitle {
   margin-bottom: 2vw;
   text-align: left !important;
   margin-left: 0;
   padding-left: 0.5rem;
 }
-.trustnogod-subtitle.center {
+.omnompirates-subtitle.center {
   text-align: center;
   margin-left: 0;
   margin-bottom: 0.5vw;
 }
-.trustnogod-grid {
+.omnompirates-grid {
   width: 100%;
   max-width: 1800px;
   display: flex;
@@ -161,14 +154,14 @@ function goBack() {
   position: relative;
   z-index: 1;
 }
-.trustnogod-row {
+.omnompirates-row {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   gap: 1vw;
 }
-.trustnogod-image {
+.omnompirates-image {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -183,34 +176,34 @@ function goBack() {
   background-position: center;
   display: block;
 }
-.trustnogod-task {
+.omnompirates-task {
   flex: 1 1 0;
   margin-left: 1vw;
 }
-.trustnogod-task.left {
+.omnompirates-task.left {
   margin-left: 0;
   margin-right: 1vw;
   align-items: flex-end;
   text-align: right;
 }
-.trustnogod-task h3 {
+.omnompirates-task h3 {
   margin-bottom: 0.5rem;
 }
-.trustnogod-task p {
+.omnompirates-task p {
   margin-bottom: 0;
 }
-.enemy-generation-image {
-  background-image: url('https://gyazo.com/b4ac7cf81d895f12caab820ef0135908/raw');
+.tutorial-system-image {
+  background-image: url('https://gyazo.com/faa829af7896c2bc3b9503aad1be225f/raw');
   background-size: cover;
   background-position: center;
 }
-.astar-image {
-  background-image: url('https://gyazo.com/8e81ebece19ad2574371734592b31488/raw');
+.uianimations-image {
+  background-image: url('https://gyazo.com/4d07436beb017dcced4c4c0062f4e4ee/raw');
   background-size: cover;
   background-position: center;
 }
-.ui-animation-image {
-  background-image: url('https://gyazo.com/d6595fc6a187b21f9cbe251ab39a615a/raw');
+.unit-visualizer-image {
+  background-image: url('https://gyazo.com/e4277977d1ab0d914d3247b263fd9b1e/raw');
   background-size: cover;
   background-position: center;
 }
@@ -238,17 +231,17 @@ function goBack() {
   border: none;
 }
 @media (max-width: 900px) {
-  .trustnogod-row {
+  .omnompirates-row {
     flex-direction: column;
     align-items: center;
     gap: 1vw;
   }
-  .trustnogod-task.left, .trustnogod-task {
+  .omnompirates-task.left, .omnompirates-task {
     margin: 0;
     align-items: center;
     text-align: center;
   }
-  .trustnogod-image {
+  .omnompirates-image {
     width: 80vw;
     height: 80vw;
     max-width: 260px;
