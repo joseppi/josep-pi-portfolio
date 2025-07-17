@@ -28,13 +28,13 @@
         <div class="omnompirates-image tutorial-system-image"></div>
         <div class="omnompirates-task">
           <h3>Tutorial System</h3>
-          <p>Created, refactored and maintained the tutorial system for the game. I also created the tutorial with the help of the game designer.</p>
+          <p>Created, refactored and maintained the <b>tutorial system</b> for the game. I also created the tutorial with the help of the game designer.</p>
         </div>
       </div>
       <div class="omnompirates-row">
         <div class="omnompirates-task left">
           <h3>UI Implementation</h3>
-          <p>I worked with a designer to implement some of the game's UI and its animations.</p>
+          <p>I worked with a designer to implement some of the game's <b>UI</b> and its <b>animations.</b></p>
         </div>
         <div class="omnompirates-image uianimations-image"></div>
       </div>
@@ -42,7 +42,7 @@
         <div class="omnompirates-image unit-visualizer-image"></div>
         <div class="omnompirates-task">
           <h3>Unit Visualizer</h3>
-          <p>I implemented the unit visualizer for the game.</p>
+          <p>I implemented the unit visualizer for the game along with the animations and system to make it work with <b>all the units in the game.</b></p>
         </div>
       </div>
     </div>

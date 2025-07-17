@@ -1,8 +1,8 @@
 <template>
   <section class="view-section">
-    <h1 class="main-title">Hi, I'm Josep Pi</h1>
+    <h1 class="main-title">Hi, I am Josep Pi!</h1>
     <p class="intro">
-      Programmer by day, musician by night! 
+      <span style="color: orange; font-weight: bold;">Programmer</span> by day, <span style="color: orange; font-weight: bold;">musician</span> by night!
     </p>
     <div class="video-card">
       <iframe 
@@ -34,8 +34,8 @@
   min-width: 0;
   margin: 0 auto;
   padding: 1vw 2vw;
-  background: var(--color-background);
-  border-radius: 2vw;
+  background: var(--vt-c-black-mute);
+  border-radius: var(--border-radius);
   box-shadow: var(--section-box-shadow);
 }
 .main-title {

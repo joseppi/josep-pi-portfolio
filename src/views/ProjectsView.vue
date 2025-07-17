@@ -112,8 +112,8 @@ function goToOmNomPirates() {
   min-width: 0;
   margin: 0 auto;
   padding: 1vw 2vw;
-  background: var(--color-background);
-  border-radius: 2vw;
+  background: var(--vt-c-black-mute);
+  border-radius: var(--border-radius);
   box-shadow: var(--section-box-shadow);
 }
 @media (max-width: 700px) {

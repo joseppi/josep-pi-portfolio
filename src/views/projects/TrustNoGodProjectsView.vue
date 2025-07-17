@@ -28,29 +28,36 @@
         <div class="trustnogod-image enemy-generation-image"></div>
         <div class="trustnogod-task">
           <h3>Enemy Generation</h3>
-          <p>Created an enemy generator that adapts to the players power and skill making the game extremely replayable in the process.</p>
+          <p>Created an enemy generator that <b>adapts to the players power and skill</b> making the game extremely replayable in the process.</p>
         </div>
       </div>
       <div class="trustnogod-row">
         <div class="trustnogod-task left">
-          <h3>A Star</h3>
+          <h3>A Star Pathfinding</h3>
           <p>Created an A* pathfinding system so we can create the path the troops have to follow before attacking the enemy.</p>
         </div>
         <div class="trustnogod-image astar-image"></div>
       </div>
       <div class="trustnogod-row">
-        <div class="trustnogod-image ui-animation-image"></div>
+        <div class="trustnogod-image troops-image"></div>
         <div class="trustnogod-task">
-          <h3>UI Animation system.</h3>
-          <p>Added animations to most UI to make every single action feel better while also trying to improve the user exeperience in the process.</p>
+          <h3>+300 Moving Entities</h3>
+          <p>Implemented a system that allowed for hundreds of moving entities with <b>different behaviors</b> move in real time.</p>
         </div>
       </div>
       <div class="trustnogod-row">
         <div class="trustnogod-task left">
-          <h3>SOLID Principles</h3>
-          <p>By following the SOLID principles, I was able to implement global stat modifiers with ease.</p>
+          <h3>UI Animation system.</h3>
+          <p>Added <b>animations to most UI</b> to make every single action feel better while also trying to improve the user exeperience in the process.</p>
         </div>
+        <div class="trustnogod-image ui-animation-image"></div>
+      </div>
+      <div class="trustnogod-row">
         <div class="trustnogod-image solid-image"></div>
+        <div class="trustnogod-task">
+          <h3>SOLID Principles</h3>
+          <p>By following the SOLID principles, I was able to implement <b>global stat modifiers</b> with ease.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -139,7 +146,7 @@ function goBack() {
 }
 
 .back-arrow:hover .svg-arrow path {
-  stroke: #ff9800;
+  stroke: var(--vt-c-orange);
 }
 .trustnogod-subtitle {
   margin-bottom: 2vw;
@@ -216,6 +223,11 @@ function goBack() {
 }
 .solid-image {
   background-image: url('https://gyazo.com/ce73036eb3864f42d1ffe0d8a18a742e/raw');
+  background-size: cover;
+  background-position: center;
+}
+.troops-image {
+  background-image: url('https://gyazo.com/59644f168b8a8dfb6636cec9446db623/raw');
   background-size: cover;
   background-position: center;
 }

@@ -7,8 +7,8 @@ import HomeView from './views/HomeView.vue'
 import ProjectsView from './views/ProjectsView.vue'
 import CareerView from './views/CareerView.vue'
 import AboutView from './views/AboutView.vue'
-import TrustNoGodProjectsView from './views/TrustNoGodProjectsView.vue'
-import OmNomPiratesProjectView from './views/OmNomPiratesProjectView.vue'
+import TrustNoGodProjectsView from './views/projects/TrustNoGodProjectsView.vue'
+import OmNomPiratesProjectView from './views/projects/OmNomPiratesProjectView.vue'
 
 const routes = [
   { path: '/', component: HomeView },

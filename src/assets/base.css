@@ -9,6 +9,7 @@
   --vt-c-black-mute: #282828;
 
   --vt-c-indigo: #2c3e50;
+  --vt-c-orange: #ff9800;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
@@ -35,7 +36,8 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
-  --section-box-shadow: 0 0.5vw 2vw 0 rgba(0,0,0,0.18);
+  --section-box-shadow: 0 0.5vw 2vw 0 var(--vt-c-black-soft);
+  --border-radius: 1.2vw;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -92,6 +94,7 @@ h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
+  color: var(--vt-c-orange);
 }
 h2 {
   font-size: 1.7rem;
@@ -99,7 +102,7 @@ h2 {
   margin: 0 0 0.5rem 0;
 }
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin: 0 0 0.2rem 0;
   color: #888;
@@ -107,6 +110,14 @@ h3 {
 p {
   font-size: clamp(0.98rem, 1.2vw, 1.08rem);
   color: #b0b8c1;
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+}
+
+b {
+  font-size: clamp(0.98rem, 1.2vw, 1.08rem);
+  font-weight: 500;
+  color: var(--vt-c-orange);
   line-height: 1.7;
   margin-bottom: 1.1rem;
 }
