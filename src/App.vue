@@ -72,9 +72,10 @@ header {
   font-weight: 500;
   font-size: 1.65rem;
   transition: color 0.2s, border-bottom 0.2s;
-  border-bottom: 3px solid transparent;
-  padding-bottom: 0.3rem;
-  
+  /* border-bottom: 3px solid transparent; */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;  
 }
 .nav-panel a.router-link-exact-active {
   color: rgba(255, 140, 0, 0.9);
