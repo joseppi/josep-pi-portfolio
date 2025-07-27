@@ -1,11 +1,9 @@
 <template>
-  <section class="trustnogod-section">
-    <div class="trustnogod-header">
-      <div class="back-arrow" @click="goBack">
-        <svg class="svg-arrow" width="3rem" height="3rem" viewBox="0 0 48 48" fill="none">
-          <path d="M30 36L18 24L30 12" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
+  <section class="view-section">
+    <div class="back-arrow" @click="goBack">
+      <svg class="svg-arrow" width="3rem" height="3rem" viewBox="0 0 48 48" fill="none">
+        <path d="M30 36L18 24L30 12" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
     <div class="trustnogod-header-content">
       <h1 class="trustnogod-title">Trust no God</h1>
@@ -74,17 +72,7 @@ function goBack() {
 </script>
 
 <style scoped>
-.trustnogod-section {
-  width: 100%;
-  max-width: 3000px;
-  margin: 0 auto;
-  padding: 2vw 2vw 4vw 2vw;
-  background: var(--color-background);
-  border-radius: 2vw;
-  box-shadow: 0 0.5vw 2vw 0 rgba(0,0,0,0.18);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.view-section {
   position: relative;
 }
 
@@ -104,10 +92,11 @@ function goBack() {
 }
 
 .trustnogod-header-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  margin-bottom: 0.2rem;
 }
 
 .trustnogod-title {
@@ -123,16 +112,17 @@ function goBack() {
 
 .back-arrow {
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 1rem;
+  top: 0.5rem;
+  left: 1.2rem;
+  margin-left: 12px;
+  margin-top: 12px;
+  padding: 0;
   cursor: pointer;
   user-select: none;
   transition: transform 0.2s;
-  z-index: 1;
-  padding-left: 1.4rem;
-  padding-top: 1.4rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
 }
 
 .back-arrow img.svg-arrow, .back-arrow .svg-arrow {
@@ -142,7 +132,7 @@ function goBack() {
 }
 
 .back-arrow:hover {
-  transform: translate(-5px, -50%);
+  transform: scale(1.08);
 }
 
 .back-arrow:hover .svg-arrow path {
@@ -242,29 +232,42 @@ function goBack() {
   z-index: 1;
 }
 .trailer-container iframe {
-  width: 100%;
-  max-width: 560px;
+  width: clamp(720px, 70vw, 1024px);
   aspect-ratio: 16 / 9;
   border-radius: 1rem;
   box-shadow: 0 4px 24px 0 rgba(0,0,0,0.22);
   border: none;
+  height: auto;
 }
-@media (max-width: 900px) {
+@media (max-width: 724px) {
   .trustnogod-row {
     flex-direction: column;
     align-items: center;
-    gap: 1vw;
   }
-  .trustnogod-task.left, .trustnogod-task {
+  .trustnogod-image {
+    order: 1;
+    width: 80vw;
+    margin-bottom: 1rem;
+  }
+  .trustnogod-task,
+  .trustnogod-task.left {
+    order: 2;
     margin: 0;
     align-items: center;
     text-align: center;
   }
+}
+@media (max-width: 720px) {
+  .trustnogod-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .trustnogod-task,
+  .trustnogod-task.left {
+    order: 1;
+  }
   .trustnogod-image {
-    width: 80vw;
-    height: 80vw;
-    max-width: 260px;
-    max-height: 260px;
+    order: 2;
   }
 }
 </style> 

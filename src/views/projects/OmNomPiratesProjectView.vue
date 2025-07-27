@@ -1,11 +1,9 @@
 <template>
-  <section class="omnompirates-section">
-    <div class="omnompirates-header">
-      <div class="back-arrow" @click="goBack">
-        <svg class="svg-arrow" width="3rem" height="3rem" viewBox="0 0 48 48" fill="none">
-          <path d="M30 36L18 24L30 12" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
+  <section class="view-section">
+    <div class="back-arrow" @click="goBack">
+      <svg class="svg-arrow" width="3rem" height="3rem" viewBox="0 0 48 48" fill="none">
+        <path d="M30 36L18 24L30 12" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
     <div class="omnompirates-header-content">
       <h1 class="omnompirates-title">OmNom Pirates</h1>
@@ -107,33 +105,6 @@ function goBack() {
   pointer-events: auto;
 }
 
-.back-arrow {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 1rem;
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.2s;
-  z-index: 1;
-  padding-left: 1.4rem;
-  padding-top: 1.4rem;
-}
-
-.back-arrow img.svg-arrow, .back-arrow .svg-arrow {
-  width: 3rem;
-  height: 3rem;
-  transition: filter 0.2s, color 0.2s, transform 0.2s;
-}
-
-.back-arrow:hover {
-  transform: translate(-5px, -50%);
-}
-
-.back-arrow:hover .svg-arrow path {
-  stroke: #ff9800;
-}
 .omnompirates-subtitle {
   margin-bottom: 2vw;
   text-align: left !important;
@@ -223,29 +194,61 @@ function goBack() {
   z-index: 1;
 }
 .trailer-container iframe {
-  width: 100%;
-  max-width: 560px;
+  width: clamp(720px, 70vw, 1024px);
   aspect-ratio: 16 / 9;
   border-radius: 1rem;
   box-shadow: 0 4px 24px 0 rgba(0,0,0,0.22);
   border: none;
+  height: auto;
 }
-@media (max-width: 900px) {
+.view-section {
+  position: relative;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 0.5rem;
+  left: 1.2rem;
+  margin-left: 12px;
+  margin-top: 12px;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.back-arrow img.svg-arrow, .back-arrow .svg-arrow {
+  width: 3rem;
+  height: 3rem;
+  transition: filter 0.2s, color 0.2s, transform 0.2s;
+}
+
+.back-arrow:hover {
+  transform: scale(1.08);
+}
+
+.back-arrow:hover .svg-arrow path {
+  stroke: var(--vt-c-orange);
+}
+@media (max-width: 720px) {
   .omnompirates-row {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1vw;
   }
-  .omnompirates-task.left, .omnompirates-task {
+  .omnompirates-task,
+  .omnompirates-task.left {
+    order: 1;
     margin: 0;
     align-items: center;
     text-align: center;
   }
   .omnompirates-image {
-    width: 80vw;
-    height: 80vw;
-    max-width: 260px;
-    max-height: 260px;
+    order: 2;
   }
 }
 </style> 

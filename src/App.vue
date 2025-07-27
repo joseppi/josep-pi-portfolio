@@ -53,7 +53,6 @@ header {
   padding: 0px;
 }
 .nav-panel {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -62,11 +61,10 @@ header {
   flex-wrap: nowrap; /* Ensure single row */
   gap: clamp(0.2rem, 2vw, 1rem);
   background: #222;
-  height: auto;
-  min-height: var(--nav-height);
+  height: clamp(2.5rem, 5.8vw, 3.3rem);
   padding: 0 clamp(0.2rem, 2vw, 2rem);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  align-items: flex-end;
+  align-items: center;
   scrollbar-width: none; /* Firefox */
   container-type: inline-size;
 }
@@ -78,7 +76,7 @@ header {
   color: var(--vt-c-white-soft);
   text-decoration: none;
   font-weight: 500;
-  font-size: clamp(1rem, 1.65rem, 2rem);
+  font-size: clamp(1rem, 5.8vw, 1.65rem);
   transition: color 0.2s, border-bottom 0.2s;
   /* border-bottom: 3px solid transparent; */
   padding-left: 0.5rem;

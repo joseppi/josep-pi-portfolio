@@ -38,7 +38,7 @@ function goToOmNomPirates() {
   max-width: 900px;
   margin: 0 auto;
 }
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
