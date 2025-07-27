@@ -25,6 +25,7 @@ header {
   margin: 0 auto 2rem;
 }
 
+/*
 @media (min-width: 1024px) {
   header {
     display: flex;
@@ -41,14 +42,15 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
-}
+}*/
 </style>
 
 <style>
 #app {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: var(--color-background);
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 .nav-panel {
   position: fixed;
@@ -57,26 +59,36 @@ header {
   width: 100vw;
   z-index: 1000;
   display: flex;
-  gap: 3rem;
+  flex-wrap: nowrap; /* Ensure single row */
+  gap: clamp(0.2rem, 2vw, 1rem);
   background: #222;
-  height: var(--nav-height);
+  height: auto;
   min-height: var(--nav-height);
-  padding: 0 3rem;
+  padding: 0 clamp(0.2rem, 2vw, 2rem);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   align-items: flex-end;
+  scrollbar-width: none; /* Firefox */
+  container-type: inline-size;
+}
+.nav-panel::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-panel a {
-  color: #fff;
+  color: var(--vt-c-white-soft);
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.65rem;
+  font-size: clamp(1rem, 1.65rem, 2rem);
   transition: color 0.2s, border-bottom 0.2s;
   /* border-bottom: 3px solid transparent; */
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding-bottom: 0.5rem;  
+  padding-bottom: 0.5rem;
+  white-space: nowrap;
+  flex-shrink: 1;
+  min-width: 0px;
 }
+
 .nav-panel a.router-link-exact-active {
   color: rgba(255, 140, 0, 0.9);
   border-bottom: 3px solid rgba(255, 140, 0, 0.9);

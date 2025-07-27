@@ -83,28 +83,6 @@ li {
   margin-bottom: 0.7rem;
   font-size: 1.1rem;
 }
-.view-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 80vw;
-  max-width: 48rem;
-  min-width: 0;
-  margin: 0 auto;
-  padding: 1vw 2vw;
-  background: var(--vt-c-black-mute);
-  border-radius: var(--border-radius);
-  box-shadow: var(--section-box-shadow);
-}
-@media (max-width: 700px) {
-  .view-section {
-    width: 98vw;
-    max-width: 100vw;
-    padding: 4vw 2vw 2vw 2vw;
-    border-radius: 4vw;
-  }
-}
 .icon-row {
   display: flex;
   flex-direction: row;

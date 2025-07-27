@@ -1,5 +1,5 @@
 <template>
-  <section class="view-section omnompirates-section">
+  <section class="omnompirates-section">
     <div class="omnompirates-header">
       <div class="back-arrow" @click="goBack">
         <svg class="svg-arrow" width="3rem" height="3rem" viewBox="0 0 48 48" fill="none">

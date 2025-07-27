@@ -122,20 +122,7 @@
   font-size: 1.05rem;
   list-style: disc inside;
 }
-.view-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 90vw;
-  max-width: 60rem;
-  min-width: 0;
-  margin: 0 auto;
-  padding: 1vw 2vw;
-  background: var(--vt-c-black-mute);
-  border-radius: var(--border-radius);
-  box-shadow: var(--section-box-shadow);
-}
+/*
 @media (max-width: 700px) {
   .view-section {
     width: 98vw;
@@ -144,4 +131,5 @@
     border-radius: 4vw;
   }
 }
+*/
 </style> 

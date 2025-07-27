@@ -24,20 +24,6 @@
 </script>
 
 <style scoped>
-.view-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 90vw;
-  max-width: 60rem;
-  min-width: 0;
-  margin: 0 auto;
-  padding: 1vw 2vw;
-  background: var(--vt-c-black-mute);
-  border-radius: var(--border-radius);
-  box-shadow: var(--section-box-shadow);
-}
 .main-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
@@ -102,6 +88,8 @@
   color: rgba(255, 140, 0, 0.95);
   box-shadow: 0 0.4vw 1.6vw rgba(255,140,0,0.15);
 }
+
+/*
 @media (max-width: 700px) {
   .view-section {
     width: 98vw;
@@ -117,4 +105,5 @@
     padding: 0.5rem;
   }
 }
+*/
 </style> 

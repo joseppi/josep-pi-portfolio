@@ -102,28 +102,6 @@ function goToOmNomPirates() {
   transform: scale(1.035);
   z-index: 2;
 }
-.view-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 90vw;
-  max-width: 60rem;
-  min-width: 0;
-  margin: 0 auto;
-  padding: 1vw 2vw;
-  background: var(--vt-c-black-mute);
-  border-radius: var(--border-radius);
-  box-shadow: var(--section-box-shadow);
-}
-@media (max-width: 700px) {
-  .view-section {
-    width: 98vw;
-    max-width: 100vw;
-    padding: 4vw 2vw 2vw 2vw;
-    border-radius: 4vw;
-  }
-}
 /* Remove .trustnogod-gif-bg and add .trustnogod-img-bg with new image */
 .trustnogod-img-bg {
   background-image: url('https://gyazo.com/13b9eeb9b4de69216fdcf62f0e9840a2/raw');
