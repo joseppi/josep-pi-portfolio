@@ -5,7 +5,7 @@
         <path d="M30 36L18 24L30 12" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </div>
-    <div class="trustnogod-header-content">
+    <div class="trustnogod-header-trailer">
       <h1 class="trustnogod-title">Trust no God</h1>
       <h2 class="trustnogod-subtitle center">RTS + Roguelike + Tower Defense</h2>
     </div>
@@ -87,11 +87,11 @@ function goBack() {
   z-index: 2;
   pointer-events: none;
 }
-.trustnogod-header-content, .back-arrow {
+.trustnogod-header-trailer, .back-arrow {
   pointer-events: auto;
 }
 
-.trustnogod-header-content {
+.trustnogod-header-trailer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -239,35 +239,23 @@ function goBack() {
   border: none;
   height: auto;
 }
-@media (max-width: 724px) {
+@media (max-width: 720px) {
   .trustnogod-row {
     flex-direction: column;
     align-items: center;
+    display: flex;
   }
   .trustnogod-image {
-    order: 1;
+    order: 2;
     width: 80vw;
     margin-bottom: 1rem;
   }
   .trustnogod-task,
   .trustnogod-task.left {
-    order: 2;
+    order: 1;
     margin: 0;
     align-items: center;
     text-align: center;
-  }
-}
-@media (max-width: 720px) {
-  .trustnogod-row {
-    display: flex;
-    flex-direction: column;
-  }
-  .trustnogod-task,
-  .trustnogod-task.left {
-    order: 1;
-  }
-  .trustnogod-image {
-    order: 2;
   }
 }
 </style> 

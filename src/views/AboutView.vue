@@ -1,23 +1,27 @@
 <template>
   <section class="view-section">
     <h1>About Me</h1>
+    <p><b>Phone:</b> +34 696-800-470 &nbsp; &nbsp;</p>
+    <p><b>Email:</b> josep.pi.serra@gmail.com &nbsp;</p>
+    <p><b>Location:</b> 08022 Barcelona, Spain &nbsp;</p>
+    <p><b>GitHub:</b> 
+      <a href="https://github.com/joseppi" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
+      <svg width="30" height="30" viewBox="0 2 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="#222"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.61-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1.01.07 1.54 1.06 1.54 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" fill="#fff"/>
+      </svg>    
+    </a>
+    </p>
+
     <h2>Hi, I'm Josep Pi!</h2>
     <p>I am a game developer who loves studying and building <b>easy-to-understand but hard-to-master games</b>. Creating a puzzle-like game where players can create their own levels and share them with others is my dream.</p>    
-    <p>For the past year, I have been working towards that goal by developing my game, <b>Trust no God</b>. Playtesting and the overall feedback have been great, and I am excited about its future.</p>
+    <p>For the past year, I have been working towards that goal by developing my game, <router-link to="/trustnogod"><b><u>Trust no God</u></b></router-link>. Playtesting and the overall feedback have been great, and I am excited about its future.</p>
     <p>I am a collaborative and supportive team member who values open communication and constructive feedback. 
       I enjoy working with others to solve problems and believe that the best results come from combining different perspectives and skills. 
       My positive attitude, adaptability, and passion <b>helped me find people to work on </b>
       <router-link to="/trustnogod"><b><u>Trust no God</u></b></router-link>
       and I will be eternally grateful for every single one of them.
-      </p>
-    <div class="icon-row">
-      <a href="https://github.com/joseppi10" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#222; border-radius:50%; padding:4px;"><circle cx="12" cy="12" r="12" fill="#222"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.61-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1.01.07 1.54 1.06 1.54 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" fill="#fff"/></svg>
-      </a>
-      <a href="mailto:josep.pi.serra@gmail.com" aria-label="Gmail">
-        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:#222; border-radius:50%; padding:4px;"><circle cx="12" cy="12" r="12" fill="#222"/><path d="M20 7.238v9.524A1.238 1.238 0 0 1 18.762 18H5.238A1.238 1.238 0 0 1 4 16.762V7.238A1.238 1.238 0 0 1 5.238 6h13.524A1.238 1.238 0 0 1 20 7.238Zm-1.238 0L12 12.143 5.238 7.238H5.24A.238.238 0 0 0 5 7.238v9.524c0 .132.107.238.238.238h13.524a.238.238 0 0 0 .238-.238V7.238a.238.238 0 0 0-.238-.238h-.002Z" fill="#fff"/></svg>
-      </a>
-    </div>
+    </p>
     <div class="about-grid">
       <div class="about-row">
         <div class="about-video-embed">
@@ -31,23 +35,21 @@
           ></iframe>
         </div>
         <div class="about-task">
-          <h3>Piano, YouTube & Teaching</h3>
-          <p>I have been <b>playing piano for many years</b> and even run a YouTube channel to share my music. 
-            Along the way, I have <b>taught piano to others</b> and helped them discover the joy of music.
-            I created a YouTube channel to share my music and to keep track of my progress as years go by.
-          </p>
           <div class="youtube-channel-link-centered">
-            <h3 class="youtube-channel-label">Visit my Piano YouTube Channel</h3>
+            <h3>Piano, YouTube & Teaching</h3>
             <a class="youtube-channel-link" href="https://www.youtube.com/@JosepPi" target="_blank" rel="noopener" aria-label="YouTube Piano Channel">
               <img src="/youtube-icon.svg" alt="YouTube Channel" class="youtube-icon" />
             </a>
           </div>
+          <p>I have been <b>playing piano for many years.</b> Along the way, I have <b>taught piano to others</b> and helped them discover the joy of music the same way my teachers did this for me.
+            I created a YouTube channel to share my music and to keep track of my progress as years go by.
+          </p>
         </div>
       </div>
       <div class="about-row">
         <div class="about-task left">
           <h3>Sports & Self-Care</h3>
-          <p>I enjoy sports, especially <b>ping pong</b>, and I take pride in taking care of myself. Staying active and healthy is an important part of my lifestyle.</p>
+          <p>I enjoy sports, especially <b>ping pong</b>, and I take pride in taking care of myself. Staying active and healthy is an important part of my life.</p>
         </div>
         <div class="about-image experience-image sports-image"></div>
       </div>
@@ -55,7 +57,8 @@
         <div class="about-image strategy-chess-image"></div>
         <div class="about-task">
           <h3>Strategy Games</h3>
-          <p>I love strategy games like <b>Chess</b> and <b>Starcraft</b>. These games challenge my mind and fuel my passion for strategic thinking and competition.</p>
+          <p>I love strategy games like <b>Chess</b> or <b>Starcraft</b>. I find facinating the fact there are so many ways to achieve victory. 
+            Thankfully, I can still enjoy that freedom since I am not that good in any of them!</p>
           <p><b>Fun fact:</b> the picture was taken when there was no electricity at home. Truly the perfect time to play some chess!</p>
         </div>
       </div>
@@ -91,6 +94,12 @@ li {
   align-items: center;
   margin: 1.2rem 0 0.5rem 0;
 }
+
+.github-link svg {
+  vertical-align: middle; /* Aligns with text */
+  margin-left: 8px; /* Adds small space */
+}
+
 .about-grid {
   width: 100%;
   max-width: 1800px;
@@ -133,7 +142,7 @@ li {
 .about-video-embed {
   width: 100%;
   max-width: 220px;
-  min-height: 120px;
+  min-height: 220px;
   aspect-ratio: 9 / 16;
   background: #222;
   border: 2px solid #b0b8c1;
@@ -155,7 +164,6 @@ li {
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
-  margin-top: 2.2rem;
 }
 .youtube-channel-label {
   margin: 0;
@@ -168,7 +176,6 @@ li {
 .youtube-channel-link {
   display: inline-block;
   margin: 0;
-  /* No hover color/fade */
   background: none !important;
   color: inherit !important;
 }
@@ -185,24 +192,25 @@ li {
   display: block;
   transition: transform 0.18s cubic-bezier(0.4,0,0.2,1);
 }
-@media (max-width: 900px) {
+@media (max-width: 720px) {
   .about-row {
     flex-direction: column;
     align-items: center;
     gap: 1vw;
   }
   .about-task.left, .about-task {
+    order: 1;
     margin: 0;
     align-items: center;
     text-align: center;
   }
   .about-image {
-    width: 90vw;
-    height: 90vw;
+    order: 2;
     max-width: 440px;
     max-height: 440px;
   }
   .about-video-embed {
+    order: 2;
     width: 45vw;
     height: 45vw;
     max-width: 220px;
