@@ -53,8 +53,6 @@ header {
   padding: 0px;
 }
 .nav-panel {
-  top: 0;
-  left: 0;
   width: 100vw;
   z-index: 1000;
   display: flex;
@@ -79,9 +77,7 @@ header {
   font-size: clamp(1rem, 5.8vw, 1.65rem);
   transition: color 0.2s, border-bottom 0.2s;
   /* border-bottom: 3px solid transparent; */
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   white-space: nowrap;
   flex-shrink: 1;
   min-width: 0px;

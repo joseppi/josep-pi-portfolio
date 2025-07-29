@@ -3,7 +3,7 @@
     <h1>About Me</h1>
     <p><b>Phone:</b> +34 696-800-470 &nbsp; &nbsp;</p>
     <p><b>Email:</b> josep.pi.serra@gmail.com &nbsp;</p>
-    <p><b>Location:</b> 08022 Barcelona, Spain &nbsp;</p>
+    <p><b>Location:</b> Barcelona, Spain &nbsp;</p>
     <p><b>GitHub:</b> 
       <a href="https://github.com/joseppi" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
       <svg width="30" height="30" viewBox="0 2 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@
     </p>
 
     <h2>Hi, I'm Josep Pi!</h2>
-    <p>I am a game developer who loves studying and building <b>easy-to-understand but hard-to-master games</b>. Creating a puzzle-like game where players can create their own levels and share them with others is my dream.</p>    
+    <p>I am a game developer who loves studying and building <b>easy-to-understand but hard-to-master games</b>. Creating a puzzle-like games where players can create their own levels and share them with others is my dream.</p>    
     <p>For the past year, I have been working towards that goal by developing my game, <router-link to="/trustnogod"><b><u>Trust no God</u></b></router-link>. Playtesting and the overall feedback have been great, and I am excited about its future.</p>
     <p>I am a collaborative and supportive team member who values open communication and constructive feedback. 
       I enjoy working with others to solve problems and believe that the best results come from combining different perspectives and skills. 
@@ -49,7 +49,7 @@
       <div class="about-row">
         <div class="about-task left">
           <h3>Sports & Self-Care</h3>
-          <p>I enjoy sports, especially <b>ping pong</b>, and I take pride in taking care of myself. Staying active and healthy is an important part of my life.</p>
+          <p>I enjoy sports, especially <b>ping pong</b> and <b>basketball</b>. I also take pride in taking care of myself. Staying active and healthy is an important part of my life.</p>
         </div>
         <div class="about-image experience-image sports-image"></div>
       </div>
