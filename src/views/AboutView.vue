@@ -1,7 +1,7 @@
 <template>
   <section class="view-section">
     <h1>About Me</h1>
-    <p><b>Phone:</b> +34 696-800-470 &nbsp; &nbsp;</p>
+    <p><b>Phone:</b> +34 696-800-470 &nbsp;</p>
     <p><b>Email:</b> josep.pi.serra@gmail.com &nbsp;</p>
     <p><b>Location:</b> Barcelona, Spain &nbsp;</p>
     <p><b>GitHub:</b> 
@@ -62,7 +62,7 @@
           <p><b>Fun fact:</b> the picture was taken when there was no electricity at home. Truly the perfect time to play some chess!</p>
         </div>
       </div>
-      <div class="about-row">
+      <div class="about-row" style="margin-bottom: 2rem;">
         <div class="about-task left">
           <h3>Food & Cooking</h3>
           <p>I absolutely love food! I occasionally <b>attend cooking classes</b> to expand my culinary knowledge, but above all, I just love eating and exploring new flavors.</p>
@@ -70,6 +70,13 @@
         <div class="about-image skills-image food-image"></div>
       </div>
     </div>
+    <h2>Let's Talk!</h2>
+    <p>Interested in hiring or just talking about games? Feel free to book a time that works for you:</p>
+    <a href="https://calendly.com/josep-pi-serra/60min" target="_blank" rel="noopener"
+    style="text-decoration: none; color: #aaa; font-size: 1.25rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem;">
+      <h3>📅 Schedule a meeting</h3>
+    </a>
+    
   </section>
 </template>
 

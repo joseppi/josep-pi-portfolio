@@ -20,7 +20,7 @@
         allowfullscreen
       ></iframe>
     </div>
-    <h2 class="trustnogod-subtitle">What did I do?</h2>
+    <h2 class="trustnogod-subtitle">What I Have Done?</h2>
     <div class="trustnogod-grid">
       <div class="trustnogod-row">
         <div class="trustnogod-image enemy-generation-image"></div>

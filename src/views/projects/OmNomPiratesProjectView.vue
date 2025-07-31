@@ -20,7 +20,7 @@
         allowfullscreen
       ></iframe>
     </div>
-    <h2 class="omnompirates-subtitle">What did I do?</h2>
+    <h2 class="omnompirates-subtitle">What I Have Done?</h2>
     <div class="omnompirates-grid">
       <div class="omnompirates-row">
         <div class="omnompirates-image tutorial-system-image"></div>
@@ -42,6 +42,13 @@
           <h3>Unit Visualizer</h3>
           <p>I implemented the unit visualizer for the game along with the animations and system to make it work with <b>all the units in the game.</b></p>
         </div>
+      </div>
+      <div class="omnompirates-row">
+        <div class="omnompirates-task left">
+          <h3>Level Generator</h3>
+          <p>I have implmented a <b>level generator</b> and a <b>dynamic spreadsheet</b> to work on enemy design and unit balance with a designer.</p>
+        </div>
+        <div class="omnompirates-image level-generator-image"></div>
       </div>
     </div>
   </section>
@@ -180,6 +187,11 @@ function goBack() {
 }
 .solid-image {
   background-image: url('https://gyazo.com/ce73036eb3864f42d1ffe0d8a18a742e/raw');
+  background-size: cover;
+  background-position: center;
+}
+.level-generator-image {
+  background-image: url('https://gyazo.com/037a3e9f4e1055024736150ba2c67140/raw');
   background-size: cover;
   background-position: center;
 }
