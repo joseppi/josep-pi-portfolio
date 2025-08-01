@@ -7,7 +7,7 @@
     </div>
     <div class="trustnogod-header-trailer">
       <h1 class="trustnogod-title">Trust no God</h1>
-      <h2 class="trustnogod-subtitle center">RTS + Roguelike + Tower Defense</h2>
+      <h2 class="trustnogod-subtitle center">RTS + Tower Defense</h2>
     </div>
     <div class="trailer-container">
       <iframe
@@ -46,7 +46,8 @@
       <div class="trustnogod-row">
         <div class="trustnogod-task left">
           <h3>UI Animation system.</h3>
-          <p>Added <b>animations to most UI</b> to make every single action feel better while also trying to improve the user exeperience in the process.</p>
+          <p>Added <b>animations to most UI</b> to make every single action feel better 
+            while also trying to improve the user experience in the process.</p>
         </div>
         <div class="trustnogod-image ui-animation-image"></div>
       </div>
