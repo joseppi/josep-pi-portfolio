@@ -7,7 +7,7 @@
     <div class="video-card">
       <iframe 
         class="portfolio-video"
-        src="https://www.youtube.com/embed/VOfw1yGn2AQ?autoplay=1&mute=1" 
+        src="https://www.youtube.com/embed/ePcZgKDgH4E?autoplay=1&mute=1" 
         title="YouTube video player" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>

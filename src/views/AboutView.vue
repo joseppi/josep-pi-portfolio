@@ -51,7 +51,7 @@
           <h3>Sports & Self-Care</h3>
           <p>I enjoy sports, especially <b>ping pong</b> and <b>basketball</b>. I also take pride in taking care of myself. Staying active and healthy is an important part of my life.</p>
         </div>
-        <div class="about-image experience-image sports-image"></div>
+        <div class="about-image sports-image"></div>
       </div>
       <div class="about-row">
         <div class="about-image strategy-chess-image"></div>
@@ -67,7 +67,7 @@
           <h3>Food & Cooking</h3>
           <p>I absolutely love food! I occasionally <b>attend cooking classes</b> to expand my culinary knowledge, but above all, I just love eating and exploring new flavors.</p>
         </div>
-        <div class="about-image skills-image food-image"></div>
+        <div class="about-image food-image"></div>
       </div>
     </div>
     <h2>Let's Talk!</h2>
@@ -148,8 +148,9 @@ li {
 }
 .about-video-embed {
   width: 100%;
-  max-width: 220px;
-  min-height: 220px;
+  max-width: 330px;
+  min-width: 220px;
+  min-height: 330px;
   aspect-ratio: 9 / 16;
   background: #222;
   border: 2px solid #b0b8c1;
@@ -228,28 +229,24 @@ li {
   background-image: url('/sports-basket.png');
   background-size: 150%;
   background-position: 50% 0%;
-  aspect-ratio: 695 / 1153;
-  width: 20%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  aspect-ratio: 695 / 1153;  
+  max-width: 220px;
 }
 .food-image {
   background-image: url('/food-college.png');
   background-size: cover;
   background-position: center;
-  aspect-ratio: auto;
-  width: 50%;
+  aspect-ratio: auto;  
+  max-width: 440px;
+  width: 90%;
 }
 .strategy-chess-image {
   background-image: url('/strategy-chess.png');
   background-size: cover;
   background-position: center;
-  aspect-ratio: 1 / 1;
-  width: 40%;
-  min-height: 180px;
-  margin-left: auto;
-  margin-right: auto;
+  aspect-ratio: auto;
+  min-height: 280px;  
+  size: 90%;
 }
 a u {
   color: var(--vt-c-orange);

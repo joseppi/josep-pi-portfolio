@@ -2,7 +2,7 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from './views/HomeView.vue'
 import ProjectsView from './views/ProjectsView.vue'
 import CareerView from './views/CareerView.vue'
@@ -17,10 +17,11 @@ const routes = [
   { path: '/about', component: AboutView },
   { path: '/trustnogod', component: TrustNoGodProjectsView },
   { path: '/omnompirates', component: OmNomPiratesProjectView },
+  { path: '/:pathMatch(.*)*', redirect: '/' },
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
 })
 
